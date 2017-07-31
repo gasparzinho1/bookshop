@@ -7,12 +7,11 @@ import com.shop.entity.Author;
 import com.shop.entity.Book;
 
 public interface AuthorService {
-
     /**
      * Create new author in a database
      * 
      * @param author
-     * @return created author or null if the author is exists in a database
+     * @return created author or null if the author is already exists
      */
     Author createAuthor(Author author);
 

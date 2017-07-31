@@ -23,10 +23,8 @@ public class GenreServiceImpl implements GenreService {
     @Override
     public Genre createGenre(Genre genre) {
         List<Genre> genres = genreRepositry.findAll();
-
         if (genres.contains(genre))
             return null;
-
         return genreRepositry.save(genre);
     }
 
@@ -60,10 +58,8 @@ public class GenreServiceImpl implements GenreService {
     @Override
     public Set<Book> getBooks(String genreName) {
         Genre genre = genreRepositry.findByNameIgnoreCase(genreName);
-
         if (genre == null)
             return null;
-
         return genre.getBooks();
     }
 }

@@ -34,7 +34,7 @@ public class Order implements Serializable {
     @Column(name = "address")
     private String address;
 
-    public Order() {
+    protected Order() {
     }
 
     public Order(long bookId, int quantity, String firstName, String lastName, String address) {

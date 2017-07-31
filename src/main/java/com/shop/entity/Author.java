@@ -36,7 +36,7 @@ public class Author implements Serializable {
     @JoinTable(name = "books_has_authors", joinColumns = @JoinColumn(name = "author_id"), inverseJoinColumns = @JoinColumn(name = "book_id"))
     private Set<Book> books = new HashSet<>();
 
-    public Author() {
+    protected Author() {
     }
 
     public Author(String name, String surname) {

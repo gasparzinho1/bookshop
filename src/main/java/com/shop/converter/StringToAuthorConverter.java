@@ -15,7 +15,6 @@ public class StringToAuthorConverter implements Converter<String, Author> {
 
     @Override
     public Author convert(String authorName) {
-
         String name = authorName.split("/")[0];
         String surname = authorName.split("/")[1];
 

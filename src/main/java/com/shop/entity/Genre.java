@@ -33,7 +33,7 @@ public class Genre implements Serializable {
     @JoinTable(name = "books_has_genres", joinColumns = @JoinColumn(name = "genre_id"), inverseJoinColumns = @JoinColumn(name = "book_id"))
     private Set<Book> books = new HashSet<>();
 
-    public Genre() {
+    protected Genre() {
     }
 
     public Genre(String name) {

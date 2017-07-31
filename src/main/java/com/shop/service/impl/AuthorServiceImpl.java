@@ -23,10 +23,8 @@ public class AuthorServiceImpl implements AuthorService {
     @Override
     public Author createAuthor(Author author) {
         List<Author> authors = authorRepository.findAll();
-
         if (authors.contains(author))
             return null;
-
         return authorRepository.save(author);
     }
 
@@ -61,10 +59,8 @@ public class AuthorServiceImpl implements AuthorService {
     @Override
     public Set<Book> getAuthorsBooks(String name, String surname) {
         Author author = authorRepository.findByNameAndSurnameIgnoreCase(name, surname);
-
         if (author == null)
             return null;
-
         return author.getBooks();
     }
 }

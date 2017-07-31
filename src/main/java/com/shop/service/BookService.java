@@ -8,7 +8,6 @@ import com.shop.entity.Book;
 import com.shop.entity.Genre;
 
 public interface BookService {
-
     Book saveBook(Book book);
 
     Book getBookById(long bookId);

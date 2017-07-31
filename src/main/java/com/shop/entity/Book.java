@@ -43,7 +43,7 @@ public class Book implements Serializable {
     @JoinTable(name = "books_has_authors", joinColumns = @JoinColumn(name = "book_id"), inverseJoinColumns = @JoinColumn(name = "author_id"))
     private Set<Author> authors = new HashSet<>();
 
-    public Book() {
+    protected Book() {
     }
 
     public Book(String title, String description, double price) {

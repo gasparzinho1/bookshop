@@ -15,7 +15,6 @@ public class StringToGenreConverter implements Converter<String, Genre> {
 
     @Override
     public Genre convert(String genreName) {
-
         Genre genre = genreRepositry.findByNameIgnoreCase(genreName);
 
         if (genre == null) {

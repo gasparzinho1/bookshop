@@ -7,12 +7,11 @@ import com.shop.entity.Book;
 import com.shop.entity.Genre;
 
 public interface GenreService {
-
     /**
      * Create new genre in a database
      * 
      * @param genre
-     * @return created genre or null if the genre is exists in a database
+     * @return created genre or null if the genre is already exists
      */
     Genre createGenre(Genre genre);
 
