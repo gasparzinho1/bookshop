@@ -24,5 +24,4 @@ public class StringToGenreConverter implements Converter<String, Genre> {
 
         return genre;
     }
-
 }

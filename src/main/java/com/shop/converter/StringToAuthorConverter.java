@@ -27,5 +27,4 @@ public class StringToAuthorConverter implements Converter<String, Author> {
 
         return author;
     }
-
 }
